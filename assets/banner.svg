@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="50%" stop-color="#161b22" />
+      <stop offset="100%" stop-color="#0a0c10" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradient -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="50%" stop-color="#4facfe" />
+      <stop offset="100%" stop-color="#00c6ff" />
+    </linearGradient>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#21262d" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#161b22" stop-opacity="0.4" />
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; font-size: 42px; fill: #ffffff; }
+    .subtitle { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 500; font-size: 20px; fill: #58a6ff; }
+    .desc { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-size: 14px; fill: #8b949e; }
+    .badge-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 13px; fill: #e6edf3; }
+    
+    /* Subtle dynamic pulse animations for background elements */
+    @keyframes pulse {
+      0% { opacity: 0.3; transform: scale(1); }
+      50% { opacity: 0.7; transform: scale(1.05); }
+      100% { opacity: 0.3; transform: scale(1); }
+    }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+      100% { transform: translateY(0px); }
+    }
+    .floating-card { animation: float 6s ease-in-out infinite; }
+    .pulsing-glow { animation: pulse 4s ease-in-out infinite; transform-origin: center; }
+  </style>
+
+  <!-- Base Canvas -->
+  <rect width="1200" height="350" rx="16" fill="url(#bgGrad)" stroke="#30363d" stroke-width="2"/>
+
+  <!-- Dynamic Animated Background Orbs -->
+  <circle cx="150" cy="80" r="120" fill="#00f2fe" opacity="0.12" filter="url(#glow)" class="pulsing-glow" />
+  <circle cx="1050" cy="270" r="140" fill="#4facfe" opacity="0.1" filter="url(#glow)" class="pulsing-glow" />
+
+  <!-- Background Tech Grid / Waves -->
+  <path d="M 0 280 Q 300 240 600 280 T 1200 250" fill="none" stroke="#1f6feb" stroke-width="1.5" opacity="0.25" />
+  <path d="M 0 295 Q 300 260 600 295 T 1200 270" fill="none" stroke="#00f2fe" stroke-width="1" opacity="0.2" />
+
+  <!-- Background Floating Data Pill Graphics (Positioned away from text) -->
+  <g class="floating-card">
+    <rect x="850" y="50" width="280" height="70" rx="12" fill="url(#cardGrad)" stroke="#30363d" stroke-width="1.5" />
+    <circle cx="885" cy="85" r="18" fill="#238636" opacity="0.8" />
+    <path d="M 878 85 L 883 90 L 893 80" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+    <text x="915" y="78" class="badge-text">21 CFR Part 11 &amp; HIPAA</text>
+    <text x="915" y="98" class="desc">Compliant DCT Workflows</text>
+  </g>
+
+  <g class="floating-card" style="animation-delay: -3s;">
+    <rect x="850" y="145" width="280" height="70" rx="12" fill="url(#cardGrad)" stroke="#30363d" stroke-width="1.5" />
+    <circle cx="885" cy="180" r="18" fill="#8957e5" opacity="0.8" />
+    <text x="880" y="185" font-family="Arial" font-weight="bold" font-size="14" fill="#fff">⚡</text>
+    <text x="915" y="173" class="badge-text">eConsent &amp; eCOA / ePRO</text>
+    <text x="915" y="193" class="desc">Real-time Patient Data</text>
+  </g>
+
+  <!-- Main Content Foreground (Left Aligned & Protected) -->
+  <g transform="translate(60, 0)">
+    <!-- Header Badge -->
+    <rect x="0" y="45" width="240" height="32" rx="16" fill="#1f6feb" opacity="0.2" stroke="#58a6ff" stroke-width="1" />
+    <text x="16" y="66" font-family="-apple-system, BlinkMacSystemFont, Segoe UI" font-size="13" font-weight="600" fill="#58a6ff">🩺 CLINICAL TRIALS ECOSYSTEM</text>
+
+    <!-- Main Title -->
+    <text x="0" y="130" class="title">Clinical Patient Engagement</text>
+
+    <!-- Accent Underline Bar -->
+    <rect x="0" y="148" width="480" height="4" rx="2" fill="url(#accentGrad)" />
+
+    <!-- Subtitle -->
+    <text x="0" y="185" class="subtitle">SaaS Platforms &amp; Open-Source Research Stack</text>
+
+    <!-- Description -->
+    <text x="0" y="225" class="desc">A curated directory of decentralized clinical trial (DCT) systems, eConsent,</text>
+    <text x="0" y="248" class="desc">eCOA/ePRO, telehealth portals, and open clinical data management platforms.</text>
+
+    <!-- Footer Tags -->
+    <g transform="translate(0, 275)">
+      <rect x="0" y="0" width="110" height="26" rx="6" fill="#21262d" stroke="#30363d" />
+      <text x="12" y="17" font-family="-apple-system, BlinkMacSystemFont, Segoe UI" font-size="11" font-weight="600" fill="#8b949e">#ClinicalTrials</text>
+
+      <rect x="120" y="0" width="100" height="26" rx="6" fill="#21262d" stroke="#30363d" />
+      <text x="132" y="17" font-family="-apple-system, BlinkMacSystemFont, Segoe UI" font-size="11" font-weight="600" fill="#8b949e">#eCOA_ePRO</text>
+
+      <rect x="230" y="0" width="110" height="26" rx="6" fill="#21262d" stroke="#30363d" />
+      <text x="242" y="17" font-family="-apple-system, BlinkMacSystemFont, Segoe UI" font-size="11" font-weight="600" fill="#8b949e">#OpenClinica</text>
+    </g>
+  </g>
+</svg>
