@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Clinical-Patient-Engagement-Platform/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Clinical-Patient-Engagement-Platform?style=flat-square&logo=github" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Clinical-Patient-Engagement-Platform/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Clinical-Patient-Engagement-Platform?style=flat-square&logo=github" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Clinical-Patient-Engagement-Platform/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Clinical-Patient-Engagement-Platform?style=flat-square&logo=github" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Clinical-Patient-Engagement-Platform/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Clinical-Patient-Engagement-Platform?style=flat-square" alt="GitHub Issues"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Clinical-Patient-Engagement-Platform/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Clinical-Patient-Engagement-Platform?style=flat-square" alt="License"/></a>
@@ -59,9 +59,9 @@ Below is a curated table of commercial SaaS patient engagement and DCT platforms
 
 ## 🔓 Open-Source GitHub Projects 💻
 
-Below are production-ready open-source platforms, frameworks, and SMART-on-FHIR repositories useful for building custom patient engagement pipelines. Sorted by GitHub Star Count (descending).
+Below are production-ready open-source platforms, frameworks, and SMART-on-FHIR repositories useful for building custom patient engagement pipelines. Sorted by GitHub Stars_Count (descending).
 
-| Project Name 📦 | GitHub Star Count ⭐ | Description & Use Case 📝 |
+| Project Name 📦 | GitHub Stars_Count ⭐ | Description & Use Case 📝 |
 | :--- | :--- | :--- |
 | **[Open Data Kit (ODK)](https://github.com/getodk/collect)** | [![Stars](https://img.shields.io/github/stars/getodk/collect?style=social&color=white)](https://github.com/getodk/collect/stargazers) | Open-source mobile data collection tool heavily utilized in global clinical research & offline patient surveys. |
 | **[LHC-Forms](https://github.com/lhncbc/lhc-forms)** | [![Stars](https://img.shields.io/github/stars/lhncbc/lhc-forms?style=social&color=white)](https://github.com/lhncbc/lhc-forms/stargazers) | NIH NLM widget library for rendering Web-based clinical survey forms, FHIR Questionnaires, and ePRO instruments. |
